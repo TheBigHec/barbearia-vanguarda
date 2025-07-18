@@ -94,11 +94,7 @@
       width: 100%;
     }
 
-    & .bolinhas {
-      position: absolute;
-      left: 0px;
-      z-index: -20;
-    }
+    
   }
 
   & img {
@@ -111,7 +107,21 @@
 
   & #hero-slider {
     margin-top: 16px;
+
+    
   }
+  
+    & .bolinhas {
+ 
+      position: absolute;
+
+     left: 0;
+ 
+      z-index: -20;
+ 
+ 
+ 
+    }
 }
 
 .serviços-section {
@@ -130,10 +140,10 @@
     line-height: 108%; /* 21.6px */
     letter-spacing: -1.6px;
   }
-& article {
-  width: 40%;
-  margin-right: 32px;
-}
+  & article {
+    width: 40%;
+    margin-right: 32px;
+  }
   & article p {
     text-align: center;
   }
@@ -145,9 +155,29 @@
     border-radius: 0px 8px 8px 0px;
   }
 
-  &  [role="mask"] img {
+  & [role="mask"] img {
     height: 140%;
-    transform: scaleX( -1);
+    transform: scaleX(-1);
+  }
+}
+
+.contato-section {
+  padding: 64px 16px;
+
+  & h1 {
+    margin: 0px 16px;
+
+    & .buttons-spacer {
+      margin: 0px 16px;
+    }
+  }
+
+  & a {
+    width: 100%;
+  }
+  & .whatsapp-link {
+    background-color: color-mix(in srgb, #128c7e 100%, white 20%);
+    color: var(--tom-1);
   }
 }
 
@@ -289,6 +319,66 @@ a {
   &.fileira {
     mask: url(public/fileira-de-bolinhas.svg) no-repeat center;
     mask-size: 100%;
+  }
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+
+  background-color: currentColor;
+  mask: url(public/whatsapp.svg) no-repeat center;
+  mask-size: 100%;
+}
+
+& .map {
+  width: fit-content;
+  background-color: var(--secundaria);
+  border-radius: 8px;
+  
+  
+
+  border: 4PX SOLID var(--secundaria);
+  overflow: hidden;
+
+  & .map-mask {
+    width: 272px;
+    height: 156px;
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+  & address {
+    padding: 8px;
+  }
+
+  & h2 {
+    margin: 0;
+    color: #fff;
+
+    font-family: Exo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 108%; /* 21.6px */
+    letter-spacing: -1.6px;
+  }
+
+  & h3 {
+    margin: 0;
+    color: #fff;
+
+    font-family: Exo;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 108%; /* 12.96px */
+    letter-spacing: -0.96px;
   }
 }
 
