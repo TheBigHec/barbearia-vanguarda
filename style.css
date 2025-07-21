@@ -93,8 +93,6 @@
     & img {
       width: 100%;
     }
-
-    
   }
 
   & img {
@@ -107,21 +105,15 @@
 
   & #hero-slider {
     margin-top: 16px;
-
-    
   }
-  
-    & .bolinhas {
- 
-      position: absolute;
 
-     left: 0;
- 
-      z-index: -20;
- 
- 
- 
-    }
+  & .bolinhas {
+    position: absolute;
+
+    left: 0;
+
+    z-index: -20;
+  }
 }
 
 .serviços-section {
@@ -178,6 +170,14 @@
   & .whatsapp-link {
     background-color: color-mix(in srgb, #128c7e 100%, white 20%);
     color: var(--tom-1);
+  }
+}
+
+.unidades-section {
+  height: fit-content;
+
+  & .map {
+    margin: 0 auto;
   }
 }
 
@@ -272,7 +272,9 @@ section {
 }
 
 /* Botão */
-a {
+[role="button"],
+button {
+  /* Layout */
   width: fit-content;
   display: inline-flex;
   padding: 7px 29px;
@@ -335,10 +337,8 @@ a {
   width: fit-content;
   background-color: var(--secundaria);
   border-radius: 8px;
-  
-  
 
-  border: 4PX SOLID var(--secundaria);
+  border: 4px SOLID var(--secundaria);
   overflow: hidden;
 
   & .map-mask {
@@ -379,6 +379,46 @@ a {
     font-weight: 400;
     line-height: 108%; /* 12.96px */
     letter-spacing: -0.96px;
+  }
+}
+
+footer {
+  color: white;
+
+  & [role="logo"] {
+    width: 32px;
+    height: 32px;
+
+    background-color: white;
+  }
+
+  & div:has(nav) {
+    background-color: var(--tom-3);
+    padding: 16px 32px;
+  }
+  & div:has(p) {
+    padding: 12px 0;
+    background-color: color-mix(in srgb, var(--tom-3) 100%, black 40%);
+  }
+
+  & p,
+  a {
+    color: #fff;
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; /* 8 px */
+
+    margin: 0;
+    opacity: 100;
+    text-decoration: none;
+
+    transition: all 150ms;
+  }
+
+  & a:hover {
+    color: var(--tom-1);
   }
 }
 

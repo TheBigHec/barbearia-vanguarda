@@ -27,7 +27,8 @@
       </div>
 
       <p class="paragrafo-hero">
-        Obtenha um estilo impecável, do cabelo à barba.
+        Obtenha um estilo impecável,<br />
+        do cabelo à barba.
       </p>
     </section>
     <section class="a-barnearia-section">
@@ -49,7 +50,7 @@
           para homens que valorizam estilo, conforto e cuidado pessoal.
         </p>
         <!-- a= ancora = anchor -->
-        <a href="#"> Leia mais </a>
+        <a role="button" href="#"> Leia mais </a>
       </article>
     </section>
     <!--seção serviço-->
@@ -70,7 +71,7 @@
         <article class="flex flex-col justify-around items-center">
           <h2>Corte</h2>
           <p>Social, degradê, surfista, militar, razor part, undercut</p>
-          <a href="#">ver mais</a>
+          <a role="button" href="#">ver mais</a>
         </article>
       </div>
 
@@ -85,51 +86,64 @@
       </div>
 
       <div class="buttons-spacer flex flex-col gap-2">
-      <a href="hector.gn.silva@gmail.com">
-        <i data-feather="mail"></i>
-        Nos envie um Email
-      </a>
+        <a role="button" href="hector.gn.silva@gmail.com">
+          <i data-feather="mail"></i>
+          Nos envie um Email
+        </a>
 
-      <a
-        class="whatsapp-link"
-        href="https://wa.me/55119807997785?text=srbgdghnhn">
-        
-         <div class="whatsapp-icon"></div>
-         
-        Fale conosco
-      
-      </a>
+        <a
+          role="button"
+          class="whatsapp-link"
+          href="https://wa.me/55119807997785?text=srbgdghnhn"
+        >
+          <div class="whatsapp-icon"></div>
+
+          Fale conosco
+        </a>
       </div>
-
-     
     </section>
 
-<!--SEÇÃO UNIDADES-->
+    <!--SEÇÃO UNIDADES-->
 
-<section class="unidades-section">
-<p>Nossa sede, localizada na zona leste de São Paulo, e as demais unidades, estão abertas todos os dias.<br><br> Confira os horários específicos de cada unidade.
-  
-</p>
+    <section class="unidades-section gap-8">
+      <p>
+        Nossa sede, localizada na zona leste de São Paulo, e as demais unidades,
+        estão abertas todos os dias.<br /><br />
+        Confira os horários específicos de cada unidade.
+      </p>
 
-<div class="map">
-  <div class="map-mask">
-    <img src="public/mapa-1.jpg" alt="imagem da unidade 1 ">
-  </div>
+      <div class="map">
+        <div class="map-mask">
+          <img src="public/mapa-1.jpg" alt="imagem da unidade 1 " />
+        </div>
 
-  <address class="flex flex-col gap-1">
-    <h2>Av. Marechal Tito 1500</h2>
-    <h3>São Miguel Paulista, São Paulo</h3>
+        <address class="flex flex-col gap-1">
+          <h2>Av. Marechal Tito 1500</h2>
+          <h3>São Miguel Paulista, São Paulo</h3>
+        </address>
+      </div>
+    </section>
 
-  </address>
-</div>
-</section>
-   
-    
+    <footer>
+      <div class="flex justify-between items-center">
+        <div role="logo"></div>
+        <!--navigation-->
+        <nav class="flex gap-4">
+          <a href="#">Contato</a>
+          <a href="#">Unidades</a>
+          <a href="#">Serviços</a>
+          <a href="#">A barbearia</a>
+          <a href="#">Home</a>
+        </nav>
+      </div>
 
-<script>
-    feather.replace();
-</script>
+      <div class="flex justify-center">
+        <p>© Barbearia Vanguarda - Todos os Direitos Reservados Desde 2013</p>
+      </div>
+    </footer>
 
-   
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
