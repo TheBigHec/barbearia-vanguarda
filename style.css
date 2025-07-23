@@ -49,6 +49,18 @@
     margin-top: 16px;
     justify-content: center;
   }
+
+  @media (min-width: 768px) {
+    padding: 64px;
+
+    & #hero-slider {
+      height: 380px;
+    }
+    & img {
+      height: initial;
+      width: 100%;
+    }
+  }
 }
 
 .a-barnearia-section {
@@ -180,7 +192,6 @@
   & .map {
     margin: 0 auto;
   }
-
 
   & p {
     margin: 16px 32px;
@@ -509,6 +520,10 @@ swiper-container {
 }
 
 swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   transition: transform 500ms;
 }
 

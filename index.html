@@ -10,7 +10,7 @@
     <!-- swipers.jr-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-    <link rel="shortcut icon" href="/public/logo-boy.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/public/logo-boy.svg" type="image/x-icon" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbearia Vanguarda</title>
@@ -64,14 +64,14 @@
     <section class="hero">
       <div id="header-mask-spacer">
         <header>
-          <h1>Barbearia <span>Vanguarda</span></h1>
+          <h1>Barbearia <br><span>Vanguarda</span></h1>
           <div role="logo" class="logo-hero"></div>
         </header>
 
         <!-- role = paper -->
 
         <div id="hero-slider" role="mask">
-          <swiper-container autoplay loop speed=500;>
+          <swiper-container autoplay loop speed="500;">
             <swiper-slide>
               <img src="public/image 1.jpg" alt="" />
             </swiper-slide>
@@ -171,7 +171,7 @@
         Confira os horários específicos de cada unidade.
       </p>
 
-      <swiper-container space-between="-96" rewand>
+      <swiper-container space-between="-96" rewand class="swiper-unidades">
         <swiper-slide>
           <div class="map">
             <div class="map-mask">
@@ -184,9 +184,9 @@
             </address>
           </div>
         </swiper-slide>
- 
+
         <swiper-slide>
-  <div class="map">
+          <div class="map">
             <div class="map-mask">
               <img src="public/unidade-2.jpg" alt="imagem da unidade 1 " />
             </div>
@@ -199,7 +199,7 @@
         </swiper-slide>
 
         <swiper-slide>
-         <div class="map">
+          <div class="map">
             <div class="map-mask">
               <img src="public/unidade-3.jpg" alt="imagem da unidade 1 " />
             </div>
@@ -209,10 +209,9 @@
               <h3>São Miguel Paulista, São Paulo</h3>
             </address>
           </div>
-        
         </swiper-slide>
 
-         <swiper-slide>
+        <swiper-slide>
           <div class="map">
             <div class="map-mask">
               <img src="public/slide-3.jpg" alt="imagem da unidade 1 " />
@@ -251,6 +250,12 @@
       //const=constante//
       //menu=variavel//
       const menu = document.querySelector("dialog");
+
+      document.querySelector(".swiper-unidades").breakpoints = {
+        400: {
+          spaceBetween: -116
+        }
+      }
     </script>
   </body>
 </html>
