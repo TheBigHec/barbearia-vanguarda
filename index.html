@@ -10,6 +10,8 @@
     <!-- swipers.jr-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+    <link rel="shortcut icon" href="/public/logo-boy.svg" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbearia Vanguarda</title>
   </head>
@@ -69,7 +71,7 @@
         <!-- role = paper -->
 
         <div id="hero-slider" role="mask">
-          <swiper-container autoplay loop speed:500;>
+          <swiper-container autoplay loop speed=500;>
             <swiper-slide>
               <img src="public/image 1.jpg" alt="" />
             </swiper-slide>
@@ -169,16 +171,60 @@
         Confira os horários específicos de cada unidade.
       </p>
 
-      <div class="map">
-        <div class="map-mask">
-          <img src="public/mapa-1.jpg" alt="imagem da unidade 1 " />
-        </div>
+      <swiper-container space-between="-96" rewand>
+        <swiper-slide>
+          <div class="map">
+            <div class="map-mask">
+              <img src="public/unidade-1.jpg" alt="imagem da unidade 1 " />
+            </div>
 
-        <address class="flex flex-col gap-4">
-          <h2>Av. Marechal Tito 1500</h2>
-          <h3>São Miguel Paulista, São Paulo</h3>
-        </address>
-      </div>
+            <address class="flex flex-col gap-8">
+              <h2>Av. Marechal Tito 1500</h2>
+              <h3>São Miguel Paulista, São Paulo</h3>
+            </address>
+          </div>
+        </swiper-slide>
+ 
+        <swiper-slide>
+  <div class="map">
+            <div class="map-mask">
+              <img src="public/unidade-2.jpg" alt="imagem da unidade 1 " />
+            </div>
+
+            <address class="flex flex-col gap-8">
+              <h2>Av. Marechal Tito 1500</h2>
+              <h3>São Miguel Paulista, São Paulo</h3>
+            </address>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+         <div class="map">
+            <div class="map-mask">
+              <img src="public/unidade-3.jpg" alt="imagem da unidade 1 " />
+            </div>
+
+            <address class="flex flex-col gap-8">
+              <h2>Av. Marechal Tito 1500</h2>
+              <h3>São Miguel Paulista, São Paulo</h3>
+            </address>
+          </div>
+        
+        </swiper-slide>
+
+         <swiper-slide>
+          <div class="map">
+            <div class="map-mask">
+              <img src="public/slide-3.jpg" alt="imagem da unidade 1 " />
+            </div>
+
+            <address class="flex flex-col gap-8">
+              <h2>Av. Marechal Tito 1500</h2>
+              <h3>São Miguel Paulista, São Paulo</h3>
+            </address>
+          </div>
+        </swiper-slide>
+      </swiper-container>
     </section>
 
     <footer>
