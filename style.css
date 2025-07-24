@@ -50,6 +50,7 @@
     justify-content: center;
   }
 
+  /* tablet */
   @media (min-width: 768px) {
     padding: 64px;
 
@@ -63,7 +64,7 @@
   }
 }
 
-.a-barnearia-section {
+.a-barbearia-section {
   justify-content: space-between;
   & .card {
     width: 270px;
@@ -126,6 +127,17 @@
 
     z-index: -20;
   }
+
+  @media (min-width: 768px) {
+    & [role="mask"] {
+      width: 620px;
+      height: 620px;
+      right: -100px;
+    }
+    & .card {
+      width: 370px;
+    }
+  }
 }
 
 .serviços-section {
@@ -163,6 +175,24 @@
     height: 140%;
     transform: scaleX(-1);
   }
+
+  @media (min-width: 768px) {
+    padding: 96px 64px;
+
+    & [role="mask"] {
+      width: 180px;
+      height: 360px;
+      border-radius: 8px;
+    }
+
+    & article {
+      justify-content: center;
+    }
+
+    & article a {
+      margin-op: 20px;
+    }
+  }
 }
 
 .contato-section {
@@ -183,6 +213,20 @@
     background-color: color-mix(in srgb, #128c7e 100%, white 20%);
     color: var(--tom-1);
   }
+
+  @media (min-width: 768px) {
+    padding: 64px;
+    justify-content: space-around !important;
+
+    & [role="mask"] {
+      height: 400px;
+    }
+
+    & .buttons-spacer {
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
 }
 
 .unidades-section {
@@ -200,13 +244,21 @@
   & swiper-slide:not(.swiper-slide-active) {
     transform: scale(0.9);
   }
+  @media (min-width: 768px) {
+    padding-bottom: 128px;
+    & p {
+      margin: 64px 128px;
+    }
+  }
 }
 
 /* ********** */
 /* COMPONENTES*/
 /* ********** */
 /* código que será reutilizado em todo o website */
-
+main {
+  overflow: hidden;
+}
 /*Título*/
 
 [role="logo"] {
@@ -223,7 +275,8 @@
 section,
 dialog {
   width: 100%;
-
+  max-width: 1024px;
+  margin: 0 auto;
   /* Smallest View Heigth */
   height: 100svh;
 
@@ -231,7 +284,12 @@ dialog {
 
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 64px;
+  }
 }
 
 /* PARÁGRAFO*/
@@ -276,21 +334,6 @@ div[role="mask"] {
   overflow: hidden;
 
   filter: drop-shadow(0px 24px 34px rgba(0, 0, 0, 0.25));
-}
-/* seção */
-section {
-  width: 100%;
-
-  /* Smallest View Heigth */
-  height: 100svh;
-
-  padding: 64px 32px;
-
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-
-  position: relative;
 }
 
 /* Botão */
@@ -405,18 +448,27 @@ button {
     letter-spacing: -0.96px;
   }
 }
+
+@media (min-width: 768px) {
+  & .map-mask {
+    width: 372px;
+    height: 256px;
+  }
+}
+
+/* rodape footer */
 footer {
   color: white;
   & [role="logo"] {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
 
     background-color: white;
   }
 
   & div:has(nav) {
     background-color: var(--tom-3);
-    padding: 16px 32px;
+    padding: 48px 32px;
   }
 
   & div:has(p) {
@@ -424,6 +476,9 @@ footer {
     background-color: color-mix(in srgb, var(--tom-3) 100%, black 40%);
   }
 
+  & a {
+    font-size: 12px !important;
+  }
   & p,
   a {
     color: #fff;
@@ -441,6 +496,12 @@ footer {
   }
   & a:hover {
     color: var(--tom-1);
+  }
+
+  @media (min-width: 768px) {
+    & div:has(nav) {
+      padding: 64px;
+    }
   }
 }
 
